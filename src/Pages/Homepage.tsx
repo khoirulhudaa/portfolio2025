@@ -253,18 +253,6 @@ const Homepage: React.FC = () => {
     <>
       <FadeTransition />
 
-      <video
-        ref={videoRef}
-        className="fixed z-[-1] rotate-90 md:rotate-0 top-0 left-0 scale-[4] md:scale-[1] w-full h-screen lg:h-auto select-none"
-        disablePictureInPicture
-        disableRemotePlayback
-        autoPlay
-        loop
-        muted
-        playsInline
-        src="https://l4wlsi8vxy8hre4v.public.blob.vercel-storage.com/video/glass-animation-5-f0gPcjmKFIV3ot5MGOdNy2r4QHBoXt.mp4">
-      </video>
-
       {
         activeModalSearch ? (
           <ModalSearch onClose={() => { setActiveModalSearch(false); setActiveSearch(false) }} />
