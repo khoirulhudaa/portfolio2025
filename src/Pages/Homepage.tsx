@@ -3,7 +3,7 @@ import { ArrowRight02Icon, ArrowUp01Icon, BrowserIcon, Building02Icon, Calendar0
 import React, { useEffect, useRef, useState } from 'react'
 import { FaArrowRight, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import { Build, Cirebon, Diskominfo, Diskominfo2, Diskominfo3, Firebase, Git1, Git2, Git3, Google, Inovasi, Jakarta, Jannah, Jest, JWD, KonstruksiLogo, Laravel, Leaflet, Luvlywed, Majalengka, Node, OMDB, Pacticles2, PakYos, Reacts, Redux, Sigeo1, Sigeo2, Survey, Team, TS, Unipay, Unipay2, Weather, Winner, Xendit } from '../Assets'
+import { Build, Cirebon, Diskominfo, Diskominfo2, Diskominfo3, Firebase, Git1, Git2, Git3, Google, Inovasi, Jakarta, Jannah, Jest, JWD, KonstruksiLogo, Leaflet, Luvlywed, Majalengka, Node, OMDB, Pacticles2, PakYos, Reacts, Redux, Sigeo1, Sigeo2, Survey, Team, TS, TW, Unipay, Unipay2, Weather, Winner, Xendit } from '../Assets'
 import FooterComp from "../Components/Footer"
 import InfiniteSlider from "../Components/InfiniteSlider"
 import ModalSearch from "../Components/Modal"
@@ -220,17 +220,17 @@ const Homepage: React.FC = () => {
     "CRUD - Outgoing items",
   ]
 
-  const implement = [
-    "Queue/jobs with redis",
-    "Middleware/Throttle",
-    "Validation data",
-    "Create ERD (draw.io)",
-    "Repository (struktur foler)",
-    "Laravel horizon",
-    "JSON Web Tken",
-    "Traits",
-    "Model, View, Controller",
-  ]
+  // const implement = [
+  //   "Queue/jobs with redis",
+  //   "Middleware/Throttle",
+  //   "Validation data",
+  //   "Create ERD (draw.io)",
+  //   "Repository (struktur foler)",
+  //   "Laravel horizon",
+  //   "JSON Web Tken",
+  //   "Traits",
+  //   "Model, View, Controller",
+  // ]
 
   const textEnglish = "Gudangku Admin Dashboard is a system for managing warehouse data in a structured and easy way. It features login security, ensuring that not everyone can access it. Key features include managing product data, types, units, and user data management."
 
@@ -262,7 +262,8 @@ const Homepage: React.FC = () => {
 
       {
         detailModal ? (
-          <ModalDetail onClose={() => setDetailModal(false)} textEnglish={textEnglish} title="GudangKu" features={features} implement={implement} />
+          // <ModalDetail onClose={() => setDetailModal(false)} textEnglish={textEnglish} title="GudangKu" features={features} implement={implement} />
+          <ModalDetail onClose={() => setDetailModal(false)} textEnglish={textEnglish} title="GudangKu" features={features} />
         ) :
           <></>
       }
@@ -396,11 +397,11 @@ const Homepage: React.FC = () => {
           </div>
 
           <div className='relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-            <h1 className='relative text-white z-40 text-3xl md:text-4xl md:tracking-normal tracking-widest max-md:font-medium md:px-4 xl:text-8xl animate-fadeIn delay-[1000ms]'>FRONTEND WEB DEV <br /> WITH <span className="text-gray-500">REACT</span></h1>
+            <h1 className='relative text-white z-40 text-[26px] md:text-4xl md:tracking-normal tracking-widest max-md:font-medium md:px-4 xl:text-8xl animate-fadeIn delay-[1000ms]'>FRONTEND WEB DEV <br /> WITH <span className="text-gray-500">REACT</span></h1>
           </div>
 
           <div className='relative mt-6 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-            <p className='w-full md:w-max text-slate-300 md:px-3 text-base md:text-lg leading-loose md:tracking-normal tracking-widest  md:text-balance md:font-medium animate-fadeIn delay-[1000ms]'>Welcome to my homebase—where ideas, creativity, and experience come together in a digital portfolio</p>
+            <p className='w-full md:w-max text-slate-300 md:px-3 text-base text-[11px] md:text-lg leading-loose md:tracking-normal tracking-widest  md:text-balance md:font-medium animate-fadeIn delay-[1000ms]'>Welcome to my homebase—where ideas, creativity, and experience come together in a digital portfolio</p>
           </div>
 
           <div className='relative z-[99999] my-7 py-2 flex-col md:flex-row md:flex items-center before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
@@ -430,14 +431,14 @@ const Homepage: React.FC = () => {
           <div className="absolute z-[33] left-[20%] w-[60%] h-[40px] py-[30%] transform -translate-y-[75%] -rotate-45 bg-[radial-gradient(circle_at_left_bottom,_#e6b7fe_10%,_#5049c2_20%,_rgba(87,78,255,0)_60%)] blur-[240px]"></div>
           <div className="absolute z-[33] left-[25%] w-[30%] h-[40px] py-[30%] transform -translate-y-[51%] -rotate-45 bg-[radial-gradient(circle_at_left_bottom,_#e6b7fe_10%,_#5049c2_20%,_rgba(87,78,255,0)_0%)] blur-[240px]"></div>
 
-          <small className='relative text-[#00B4F5] mb-4 text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>React - Laravel - Express.</small>
+          <small className='relative text-[#00B4F5] mb-4 text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>React - Next - Javascriot.</small>
           <div className='w-full mt-4 mb-10 md:flex justify-between items-center '>
             <motion.h2
               initial={{ opacity: 0, filter: 'blur(10px)' }}
               whileInView={{ opacity: 1, filter: 'blur(0px)' }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
               viewport={{ once: true, amount: 0.2 }}
-              className='relative text-[30px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'
+              className='relative text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'
             >
               Skill in languages
             </motion.h2>
@@ -453,9 +454,9 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-base text-slate-300 w-[96%] md:w-[66%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'
+            className='relative text-[11px] md:text-[16px] text-slate-300 w-[96%] md:w-[66%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'
           >
-            As a Fullstack Developer, I specialize in modern technologies, leveraging frameworks like MERN and Laravel while implementing best practices in web development to create efficient.
+            As a Frontend Web Developer, I specialize in building interactive and responsive user interfaces using React, Redux, TypeScript, and Tailwind CSS. I'm also experienced in integrating APIs.
           </motion.p>
 
           <div className="w-full md:hidden">
@@ -467,13 +468,13 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative w-full rounded-[24px] bg-white/20 backdrop-blur-2xl p-4 hidden md:flex items-center md:flex-no-wrap flex-wrap justify-between z-[999] mt-12'>
+            className='relative text-[11px] md:text-[16px] w-full rounded-[24px] bg-white/20 backdrop-blur-2xl p-4 hidden md:flex items-center md:flex-no-wrap flex-wrap justify-between z-[999] mt-12'>
             <div className='relative z-[999] w-full h-full rounded-[20px] bg-white p-10 border border-black flex items-center justify-between  '>
               <img loading='lazy' src={Reacts} alt='iconLanguage' className='w-[34px] md:w-[80px] md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
               <img loading='lazy' src={Node} alt='iconLanguage' className='w-[34px] md:w-[80px] md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
               <img loading='lazy' src={Redux} alt='iconLanguage' className='w-[34px] md:w-[80px] md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
               <img loading='lazy' src={TS} alt='iconLanguage' className='w-[34px] md:w-[80px] md:flex hidden md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
-              <img loading='lazy' src={Laravel} alt='iconLanguage' className='w-[34px] md:w-[80px] md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
+              <img loading='lazy' src={TW} alt='iconLanguage' className='w-[34px] md:w-[80px] md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
             </div>
           </motion.div>
         </div>
@@ -491,7 +492,7 @@ const Homepage: React.FC = () => {
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className='w-full mt-4 mb-10 flex-col md:flex-row md:flex justify-between items-center '>
-            <h2 className='relative text-[28px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Our Technologies</h2>
+            <h2 className='relative text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Our Technologies</h2>
             {/* <div className='flex w-max'>
               <div className="relative flex items-center gap-6 md:p-6 md:mt-0 mt-4 text-white">
                 <p>Go to website</p>
@@ -504,7 +505,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-base text-slate-300 w-[97%] md:w-[58%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-[97%] md:w-[58%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
             Various third-party packages and platforms I have used in my experience developing web applications with React and Express.
           </motion.p>
           <div className="relative mt-10 gap-4">
@@ -517,13 +518,13 @@ const Homepage: React.FC = () => {
               <div className='md:rounded-[18px] w-full grid grid-cols-1 md:grid-cols-3 h-max overflow-hidden'>
                 <div className="md:px-6 md:py-10 md:mb-0 mb-12 relative">
                   <div className="relative flex text-white h-[50px] items-center before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
-                    <img src={Reacts} alt="logo-docker" className="relative bottom-[2px] w-[16%] md:w-[12%]" />
+                    <img src={Reacts} alt="logo-docker" className="relative bottom-[2px] w-[8%] md:w-[12%]" />
                     <p className="font-bold text-xl ml-3">
                       REACT
                     </p>
                   </div>
                   <div className="w-full mt-6">
-                    <p className="text-base text-slate-300 tracking-widest  leading-loose">
+                    <p className="text-base text-[11px] md:text-[16px] text-slate-300 tracking-widest  leading-loose">
                       A JavaScript library for building fast, interactive user interfaces using a component-based architecture.
                     </p>
                   </div>
@@ -541,13 +542,13 @@ const Homepage: React.FC = () => {
                   <div className="md:after:absolute md:after:top-0 md:after:right-0 after:h-full md:after:w-px md:after:bg-slate-900/80 dark:after:bg-white/10"></div>
 
                   <div className='relative flex gap-2 h-[50px] items-center before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-                    <img src={Jest} alt="logo-ssh" className="relative z-[44] w-[11%]" />
+                    <img src={Jest} alt="logo-ssh" className="relative z-[44] w-[8%] md:w-[11%]" />
                     <div className='flex-1'>
                       <h3 className={`text-white font-bold text-[22px] md:text-[26px]`}>Jest</h3>
                     </div>
                   </div>
                   <div className="w-full mt-6">
-                    <p className="text-base text-slate-300 tracking-widest  leading-loose">
+                    <p className="text-[11px] md:text-[16px] text-base text-slate-300 tracking-widest  leading-loose">
                       A delightful JavaScript testing framework with a focus on simplicity, performance, and developer experience.
                     </p>
                   </div>
@@ -565,7 +566,7 @@ const Homepage: React.FC = () => {
                     </div>
                   </div>
                   <div className="w-full mt-6">
-                    <p className="text-base text-slate-300 tracking-widest  leading-loose">
+                    <p className="text-[11px] md:text-[16px] text-base text-slate-300 tracking-widest  leading-loose">
                       A visual project management tool that uses boards, lists, and cards to help teams organize and prioritize tasks.
                     </p>
                   </div>
@@ -589,10 +590,10 @@ const Homepage: React.FC = () => {
               <div className='md:rounded-[18px] w-full grid grid-cols-1 md:grid-cols-3 h-max overflow-hidden'>
                 <div className={`md:px-6 md:py-10 md:mb-0 mb-12`}>
                   <div className='relative flex gap-2 h-[50px] items-center before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-                    <img src={'/next.png'} alt="logo-ssh" className="relative z-[44] w-[30%]" />
+                    <img src={'/next.png'} alt="logo-ssh" className="relative z-[44] w-[16%] md:w-[30%]" />
                   </div>
                   <div className="w-full mt-6">
-                    <p className="text-base text-slate-300 tracking-widest  leading-loose">
+                    <p className="text-[11px] md:text-[16px] text-base text-slate-300 tracking-widest  leading-loose">
                       A React framework that enables server-side rendering, static site generation, and optimized performance for modern web apps.
                     </p>
                   </div>
@@ -610,13 +611,13 @@ const Homepage: React.FC = () => {
                   <div className="md:after:absolute md:after:top-0 md:after:right-0 after:h-full md:after:w-px md:after:bg-slate-900/80 dark:after:bg-white/10"></div>
 
                   <div className='relative flex gap-2 h-[50px] items-center before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-                    <img src={Redux} alt="logo-ssh" className="relative z-[44] w-[11%] md:w-[13%]" />
+                    <img src={Redux} alt="logo-ssh" className="relative z-[44] w-[9%] md:w-[13%]" />
                     <div className='flex-1'>
                       <h3 className={`text-white font-bold text-[22px] md:text-[24px]`}>Redux</h3>
                     </div>
                   </div>
                   <div className="w-full mt-6">
-                    <p className="text-base text-slate-300 tracking-widest  leading-loose">
+                    <p className="text-[11px] md:text-[16px] text-base text-slate-300 tracking-widest  leading-loose">
                       A predictable state container for JavaScript apps, commonly used with React for managing global application state.
                     </p>
                   </div>
@@ -634,7 +635,7 @@ const Homepage: React.FC = () => {
                     </div>
                   </div>
                   <div className="w-full mt-6">
-                    <p className="text-base text-slate-300 tracking-widest  leading-loose">
+                    <p className="text-[11px] md:text-[16px] text-base text-slate-300 tracking-widest  leading-loose">
                       A typed superset of JavaScript that compiles to plain JavaScript, offering type safety and improved developer tooling.
                     </p>
                   </div>
@@ -672,7 +673,7 @@ const Homepage: React.FC = () => {
                 </div>
               </div>
             </motion.div>
-            <p className='relative text-base text-slate-300 w-[98%] md:w-[58%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Built various web applications using React and Next.js, serving as a full-stack developer, independently configuring APIs and third-party integrations.</p>
+            <p className='text-[11px] md:text-[16px] relative text-base text-slate-300 w-[98%] md:w-[58%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Built various web applications using React and Next.js, serving as a full-stack developer, independently configuring APIs and third-party integrations.</p>
 
             <motion.div
               initial={{ opacity: 0, filter: 'blur(10px)' }}
@@ -684,21 +685,21 @@ const Homepage: React.FC = () => {
                 <BrowserIcon size={46} className={`${selectType === 'apps' ? 'text-[#f85c98]' : 'text-white'}`} />
                 <div className='flex-1'>
                   <h3 className={`${selectType === 'apps' ? 'text-[#f85c98]' : 'text-white'} font-medium`}>Web apps ({dataProducts?.filter((d: any) => d.category === 'apps')?.length})</h3>
-                  <p className='text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Building web apps that simplify tasks and boost productivity.</p>
+                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Building web apps that simplify tasks and boost productivity.</p>
                 </div>
               </div>
               <div onClick={() => { setSelectType('API'), setSelectAccordion(1) }} className={`flex gap-6 ${selectType === 'API' ? 'bg-[#9e69ff11]' : ''} items-center cursor-pointer px-4 py-4 md:px-6 md:py-6 md:border-x-[0.5px] border-gray-700`}>
                 <LinkSquare02Icon size={45} className={`${selectType === 'API' ? 'text-[#5E5CF8]' : 'text-white'}`} />
                 <div className='flex-1'>
                   <h3 className={`${selectType === 'API' ? 'text-[#5E5CF8]' : 'text-white'} font-medium`}>Integrate API ({dataProducts?.filter((d: any) => d.category === 'API')?.length})</h3>
-                  <p className='text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Integrating APIs to ensure fast and seamless functionality.</p>
+                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Integrating APIs to ensure fast and seamless functionality.</p>
                 </div>
               </div>
               <div onClick={() => { setSelectType('slicing'), setSelectAccordion(1) }} className={`flex gap-6 ${selectType === 'slicing' ? 'bg-[#69dcff11]' : ''} items-center cursor-pointer px-4 py-4 md:px-6 md:py-6`}>
                 <PaintBrush04Icon size={46} className={`${selectType === 'slicing' ? 'text-[#5cc7f8]' : 'text-white'}`} />
                 <div className='flex-1'>
                   <h3 className={`${selectType === 'slicing' ? 'text-[#5cc7f8]' : 'text-white'} font-medium`}>Slicing ({dataProducts?.filter((d: any) => d.category === 'slicing')?.length})</h3>
-                  <p className='text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Transforming designs into clean, and efficient interfaces.</p>
+                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Transforming designs into clean, and efficient interfaces.</p>
                 </div>
               </div>
             </motion.div>
@@ -741,7 +742,7 @@ const Homepage: React.FC = () => {
                           }
                         </h2>
                       </Link>
-                      <p className='relative text-slate-300 w-full md:w-[85%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>{data?.desc}</p>
+                      <p className='text-[11px] md:text-[16px] relative text-slate-300 w-full md:w-[85%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>{data?.desc}</p>
 
                       <Link to={data?.url} target="__blank">
                         <p className='cursor-pointer mt-6 hover:brightness-[90%] active:scale-[0.99] text-[#00B4F5] relative flex items-center text-base before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>{data?.title} in here <FaArrowRight className='ml-4 relative top-[0.8]' /> </p>
@@ -825,7 +826,7 @@ const Homepage: React.FC = () => {
               transition={{ duration: 0.5, ease: 'easeOut' }}
               viewport={{ once: true, amount: 0.2 }}
               className='w-full mt-4 mb-10 md:flex justify-between items-center z-[9999]'>
-              <h2 className='relative text-[30px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Laravel web apps</h2>
+              <h2 className='relative text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Laravel web apps</h2>
               <div className='frelative z-[888] lex w-max'>
                 <div onClick={() => setDetailModal(true)} className="relative flex items-center gap-6 md:mt-0 mt-4 md:p-6 text-white after:absolute after:right-0 after:w-px after:h-[30vh] after:bg-slate-900/80 dark:after:bg-white/10 after:-top-[120px]">
                   <p>Detail website</p>
@@ -863,14 +864,14 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Web development and landing page.</motion.small>
+            className='relative text-[11px] md:text-[16px] text-[#00B4F5] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Web development and landing page.</motion.small>
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className='w-full mt-4 mb-10 md:flex justify-between items-center '>
-            <h2 className='relative text-[30px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Recommend - in</h2>
+            <h2 className='relative text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Recommend - in</h2>
             <Link target='_blank' className="cursor-pointer" to={'https://www.linkedin.com/in/muhammadkhoirulhuda/'}>
               <div className='flex w-max cursor-pointer'>
                   <div className="relative flex items-center gap-6 md:mt-0 mt-4 md:p-6 text-white after:absolute after:right-0 after:w-px after:h-[30vh] after:bg-slate-900/80 dark:after:bg-white/10 after:-top-[120px]">
@@ -885,7 +886,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-base text-slate-300 w-[98%] md:w-[70%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>A direct recommendation from the co-founder of the company where I interned (Konstruksi.AI), who provided positive feedback on my performance during the internship as a frontend developer.</motion.p>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-[98%] md:w-[70%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>A direct recommendation from the co-founder of the company where I interned (Konstruksi.AI), who provided positive feedback on my performance during the internship as a frontend developer.</motion.p>
 
           <div className="absolute left-[20%] z-[-1] w-[60%] h-[40px] py-[30%] transform -translate-y-[45%] -rotate-45 bg-[radial-gradient(circle_at_left_bottom,_#e6b7fe_10%,_#5049c2_20%,_rgba(87,78,255,0)_60%)] blur-[140px]"></div>
           <div className="absolute z-[-1] left-[15%] w-[100%] h-[40px] py-[30%] transform -translate-y-[63%] -rotate-45 bg-[radial-gradient(circle_at_left_bottom,_#e6b7fe_10%,_#5049c2_20%,_rgba(87,78,255,0)_0%)] blur-[25px]"></div>
@@ -896,7 +897,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative w-full bg-white/20 backdrop-blur-sm md:rounded-[28px] border border-slate-300 md:p-4 z-40 items-center justify-between mt-12 md:mt-24'>
+            className='relative text-[11px] md:text-[16px] w-full bg-white/20 backdrop-blur-sm md:rounded-[28px] border border-slate-300 md:p-4 z-40 items-center justify-between mt-12 md:mt-24'>
             <div className='w-full h-full bg-[#ffffff] px-5 py-7 md:px-10 md:py-10 md:rounded-[24px]'>
               <div className='w-full'>
                 <Link to={'https://www.linkedin.com/in/yoshua-gombo/'}>
@@ -910,7 +911,7 @@ const Homepage: React.FC = () => {
                   </div>
                 </Link>
 
-                <p className='text-[15px] w-full md:w-[94%] md:text-justify leading-loose tracking-widest mt-6 mb-10 text-slate-600'>
+                <p className='text-[11px] md:text-[15px] w-full md:w-[94%] md:text-justify leading-loose tracking-widest mt-6 mb-10 text-slate-600'>
                   To whom it may concern:
                   <br />
                   <br />
@@ -934,14 +935,14 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Experience in industry</motion.small>
+            className='relative text-[11px] md:text-[16px] text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Experience in industry</motion.small>
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className='w-full mt-4 mb-10 flex-col md:flex-row md:flex justify-between items-center '>
-            <h2 className='relative flex items-center w-max text-[30px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'><span className='md:flex hidden mr-1'>FullTime - </span> Frontend Web <span className="md:hidden flex">- FE</span></h2>
+            <h2 className='relative flex items-center w-max text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'><span className='md:flex hidden mr-1'>FullTime - </span> Frontend Web <span className="md:hidden flex">- FE</span></h2>
             <div className='flex w-max'>
               <Link target="__blank" className="cursor-pointer hover:bgrightness-[90%]" to='https://kiraproject.id/'>
                 <div className="relative flex items-center gap-6 md:mt-0 mt-4 md:p-6 text-white after:absolute after:right-0 after:w-px after:h-[200vh] after:bg-slate-900/80 dark:after:bg-white/10 after:-top-[100vh]">
@@ -956,14 +957,14 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Interned as a Frontend Web Developer at Konstruksi.AI (South Jakarta) remotely for 1 year. Assisted in building web applications and coordinated with the team.</motion.p>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Interned as a Frontend Web Developer at Konstruksi.AI (South Jakarta) remotely for 1 year. Assisted in building web applications and coordinated with the team.</motion.p>
 
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative py-2 w-full h-max md:h-[600px] md:flex mt-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
+            className='relative text-[11px] md:text-[16px] py-2 w-full h-max md:h-[600px] md:flex mt-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
             <div className='w-full md:w-[55%] h-max'>
               <a href="https://konstruksi.ai/" target="__blank">
                 <div className='relative flex gap-4 mb-6 items-center cursor-pointer before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
@@ -977,17 +978,17 @@ const Homepage: React.FC = () => {
                 <section className='mt-12'>
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Web Application Development</p>
-                    <p className='text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Build and develop a web application using <strong>React</strong>, <strong>Vite</strong>, <strong>Redux</strong> and <strong>Tailwind CSS</strong> to create responsive and efficient user interfaces and Integrate and display architectural project data.</p>
+                    <p className='text-[11px] md:text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Build and develop a web application using <strong>React</strong>, <strong>Vite</strong>, <strong>Redux</strong> and <strong>Tailwind CSS</strong> to create responsive and efficient user interfaces and Integrate and display architectural project data.</p>
                   </div>
 
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Web Features Testing and Debugging</p>
-                    <p className='text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Identify and analyze technical issues, and collaborate with the development team to find effective solutions.</p>
+                    <p className='text-[11px] md:text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Identify and analyze technical issues, and collaborate with the development team to find effective solutions.</p>
                   </div>
 
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Team Collaboration</p>
-                    <p className='text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Collaborate with backend developers, UI/UX designers, and project managers to ensure the web application development aligns with project specifications and business goals.</p>
+                    <p className='text-[11px] md:text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Collaborate with backend developers, UI/UX designers, and project managers to ensure the web application development aligns with project specifications and business goals.</p>
                   </div>
                 </section>
               </div>
@@ -1010,14 +1011,14 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Experience in industry</motion.small>
+            className='relative text-[11px] md:text-[16px] text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Experience in industry</motion.small>
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className='w-full mt-4 mb-10 flex-col md:flex-row md:flex justify-between items-center '>
-            <h2 className='relative flex items-center w-max text-[30px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'><span className='md:flex hidden mr-1'>Internship - </span> Frontend Web <span className="md:hidden flex">- FE</span></h2>
+            <h2 className='relative flex items-center w-max text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'><span className='md:flex hidden mr-1'>Internship - </span> Frontend Web <span className="md:hidden flex">- FE</span></h2>
             <div className='flex w-max'>
               <Link target="__blank" to={'https://konstruksi.ai/'}>
                 <div className="relative flex items-center gap-6 md:mt-0 mt-4 md:p-6 text-white after:absolute after:right-0 after:w-px after:h-[200vh] after:bg-slate-900/80 dark:after:bg-white/10 after:-top-[100vh]">
@@ -1032,14 +1033,14 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Interned as a Frontend Web Developer at Konstruksi.AI (South Jakarta) remotely for 1 year. Assisted in building web applications and coordinated with the team.</motion.p>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Interned as a Frontend Web Developer at Konstruksi.AI (South Jakarta) remotely for 1 year. Assisted in building web applications and coordinated with the team.</motion.p>
 
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative py-2 w-full h-max md:h-[600px] md:flex mt-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
+            className='relative text-[11px] md:text-[16px] py-2 w-full h-max md:h-[600px] md:flex mt-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
             <div className='w-full md:w-[55%] h-max'>
               <a href="https://konstruksi.ai/" target="__blank">
                 <div className='relative flex gap-4 mb-6 items-center cursor-pointer before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
@@ -1053,17 +1054,17 @@ const Homepage: React.FC = () => {
                 <section className='mt-12'>
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Web Application Development</p>
-                    <p className='text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Build and develop a web application using <strong>React</strong>, <strong>Vite</strong>, <strong>Redux</strong> and <strong>Tailwind CSS</strong> to create responsive and efficient user interfaces and Integrate and display architectural project data.</p>
+                    <p className='text-[11px] md:text-[16px] text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Build and develop a web application using <strong>React</strong>, <strong>Vite</strong>, <strong>Redux</strong> and <strong>Tailwind CSS</strong> to create responsive and efficient user interfaces and Integrate and display architectural project data.</p>
                   </div>
 
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Web Features Testing and Debugging</p>
-                    <p className='text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Identify and analyze technical issues, and collaborate with the development team to find effective solutions.</p>
+                    <p className='text-[11px] md:text-[16px] text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Identify and analyze technical issues, and collaborate with the development team to find effective solutions.</p>
                   </div>
 
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Team Collaboration</p>
-                    <p className='text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Collaborate with backend developers, UI/UX designers, and project managers to ensure the web application development aligns with project specifications and business goals.</p>
+                    <p className='text-[11px] md:text-[16px] text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Collaborate with backend developers, UI/UX designers, and project managers to ensure the web application development aligns with project specifications and business goals.</p>
                   </div>
                 </section>
               </div>
@@ -1087,14 +1088,14 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Experience in industry</motion.small>
+            className='relative text-[11px] md:text-[16px] text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Experience in industry</motion.small>
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className='w-full mt-4 mb-10 flex-col md:flex-row md:flex justify-between items-center '>
-            <h2 className='relative flex items-center w-max text-[30px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'><span className='md:flex hidden mr-1'>Diskominfo - </span> Web Dev <span className="md:hidden flex">- FE</span></h2>
+            <h2 className='relative flex items-center w-max text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'><span className='md:flex hidden mr-1'>Diskominfo - </span> Web Dev <span className="md:hidden flex">- FE</span></h2>
             <div className='flex w-max'>
               <div className="relative flex items-center gap-6 md:mt-0 mt-4 md:p-6 text-white after:absolute after:right-0 after:w-px after:h-[200vh] after:bg-slate-900/80 dark:after:bg-white/10 after:-top-[100vh]">
                 <p>Cerification</p>
@@ -1107,14 +1108,14 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Interned at the Communication Department of Cirebon Regency for 3 months, in the role of Data Analyst and Web Developer as a secondary responsibility.</motion.p>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Interned at the Communication Department of Cirebon Regency for 3 months, in the role of Data Analyst and Web Developer as a secondary responsibility.</motion.p>
 
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative py-2 w-full h-max md:h-[600px] md:flex mt-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
+            className='relative text-[11px] md:text-[16px] py-2 w-full h-max md:h-[600px] md:flex mt-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
             <div className='w-full md:w-[55%] h-max'>
               <a href="https://cirebonkab.go.id/ova_dep/dinas-komunikasi-dan-informatika/" target="__blank">
                 <div className='relative flex gap-4 mb-6 items-center cursor-pointer before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
@@ -1125,17 +1126,17 @@ const Homepage: React.FC = () => {
                 <section className='mt-12'>
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Web Application Development</p>
-                    <p className='text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-normal '>Developing and launching a web geoportal application to display the distribution of locations and administrative boundaries of Cirebon Regency, acting as the Frotnend and Backend.</p>
+                    <p className='text-[11px] md:text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-normal '>Developing and launching a web geoportal application to display the distribution of locations and administrative boundaries of Cirebon Regency, acting as the Frotnend and Backend.</p>
                   </div>
 
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">API Integration</p>
-                    <p className='text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-normal '>Integrating the API from Express into React, using MongoDB Atlas for efficient data storage.</p>
+                    <p className='text-[11px] md:text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-normal '>Integrating the API from Express into React, using MongoDB Atlas for efficient data storage.</p>
                   </div>
 
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Make Scalability</p>
-                    <p className='text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-normal '>Here’s the translation of your text into English:Implementing CMV for Express.js to ensure scalability and ease of future development.</p>
+                    <p className='text-[11px] md:text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-normal '>Here’s the translation of your text into English:Implementing CMV for Express.js to ensure scalability and ease of future development.</p>
                   </div>
                 </section>
               </div>
@@ -1166,14 +1167,14 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Computer science</motion.small>
+            className='relative text-[11px] md:text-[16px] text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Computer science</motion.small>
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className='w-full mt-4 mb-10 md:flex justify-between items-center '>
-            <h2 className='relative text-[30px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
+            <h2 className='relative text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
               <a href='https://github.com/khorulhudaa' className='flex items-center gap-4'>
                 Last education <LinkSquare01Icon className='text-[#00B4F5]' />
               </a>
@@ -1190,19 +1191,19 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>I pursued a four-year bachelor's degree in Informatics Engineering at a private university in Cirebon, STMIK IKMI Cirebon, located in Majasem.</motion.p>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>I pursued a four-year bachelor's degree in Informatics Engineering at a private university in Cirebon, STMIK IKMI Cirebon, located in Majasem.</motion.p>
 
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative z-[99999999] w-full py-4 grid grid-cols-1 md:grid-cols-2 md:mt-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
+            className='relative text-[11px] md:text-[16px] z-[99999999] w-full py-4 grid grid-cols-1 md:grid-cols-2 md:mt-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
             <div className={`flex-1 flex gap-6 items-center cursor-pointer py-6 md:py-10`}>
               <Mortarboard02Icon size={50} className={`text-white md:flex hidden`} />
               <div className='flex-1'>
                 <h3 className={`text-white font-medium`}>B.Sc. in Computer Science</h3>
-                <p className='text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Programming, and problem-solving skills.</p>
+                <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Programming, and problem-solving skills.</p>
               </div>
             </div>
             <div className="relative md:block hidden flex-1 h-full md:rounded-[24px] md:bg-white/20 backdrop-blur-2xl md:p-4 ">
@@ -1211,14 +1212,14 @@ const Homepage: React.FC = () => {
                   <Calendar04Icon size={50} className={`text-black md:flex hidden`} />
                   <div className='flex-1'>
                     <h3 className={`text-white md:text-black font-medium`}>Graduation year</h3>
-                    <p className='text-[14px] mt-2 text-slate-300 md:text-slate-600 leading-loose tracking-widest'>I received a graduation certificate in May.</p>
+                    <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 md:text-slate-600 leading-loose tracking-widest'>I received a graduation certificate in May.</p>
                   </div>
                 </div>
                 <div className={`relative flex gap-6 items-center cursor-pointer md:px-8 py-6 md:py-10 before:absolute before:top-0 before:h-px before:w-full before:bg-slate-900/20 dark:before:bg-slate-900/30 before:-left-[0px]`}>
                   <InformationDiamondIcon size={50} className={` md:flex hidden ${selectType === 'slicing' ? 'text-[#5cc7f8]' : 'text-black'}`} />
                   <div className='flex-1'>
                     <h3 className={`${selectType === 'slicing' ? 'text-[#5cc7f8]' : 'text-white md:text-black'} font-medium`}>IPK YUDISIUM (3,44)</h3>
-                    <p className='text-[14px] mt-2 text-slate-300 md:text-slate-600 leading-loose tracking-widest'>I achieved a GPA of <b>3,44</b> at the end of my studies.</p>
+                    <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 md:text-slate-600 leading-loose tracking-widest'>I achieved a GPA of <b>3,44</b> at the end of my studies.</p>
                   </div>
                 </div>
               </div>
@@ -1238,14 +1239,14 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Top-left corner (me)</motion.small>
+            className='relative text-[11px] md:text-[16px] text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Top-left corner (me)</motion.small>
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className='w-full mt-4 mb-10 md:flex justify-between items-center '>
-            <h2 className='relative text-[30px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
+            <h2 className='relative text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
               <a href='https://github.com/khorulhudaa' className='flex items-center gap-4'>
                 Worked in a team <LinkSquare01Icon className='text-[#00B4F5]' />
               </a>
@@ -1262,7 +1263,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-base text-slate-300 w-full md:w-[68%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>I worked remotely but still performed tasks and coordinated with the development team professionally.</motion.p>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[68%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>I worked remotely but still performed tasks and coordinated with the development team professionally.</motion.p>
 
           <div className="relative z-[999999999] flex items-center justify-center mt-12">
             <motion.div
@@ -1291,14 +1292,14 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>All repositories github</motion.small>
+            className='relative text-[11px] md:text-[16px] text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>All repositories github</motion.small>
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className='w-full mt-4 mb-10 md:flex justify-between items-center '>
-            <h2 className='relative text-[30px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
+            <h2 className='relative text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
               <a href='https://github.com/khorulhudaa' className='flex items-center gap-4'>
                 Github account <LinkSquare01Icon className='text-[#00B4F5]' />
               </a>
@@ -1317,7 +1318,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>My performance related to my activities on GitHub shows that I have been quite active in deploying both old and new projects throughout 2024.</motion.p>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>My performance related to my activities on GitHub shows that I have been quite active in deploying both old and new projects throughout 2024.</motion.p>
 
           {/* <div className="md:w-[86vw] h-max mt-12 mx-auto bg-white/20 backdrop-blur-2xl md:p-4 md:rounded-[20px]">
             <motion.div
@@ -1337,13 +1338,13 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative w-full grid grid-cols-1 md:grid-cols-3 mt-8 mmd:t-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
+            className='relative text-[11px] md:text-[16px] w-full grid grid-cols-1 md:grid-cols-3 mt-8 mmd:t-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
             <a href='https://github.com/khoirulhudaa?achievement=pull-shark&tab=achievements' target='__blank'>
               <div onClick={() => setSelectTypeGit('git1')} className={`flex gap-6 ${selectTypeGit === 'git1' ? 'bg-[#ff69df11]' : ''} items-center cursor-pointer px-4 py-6 md:px-6`}>
                 <img src={Git1} alt="git" className="w-12" />
                 <div className='flex-1'>
                   <h3 className={`${selectTypeGit === 'git1' ? 'text-[#f85c98]' : 'text-white'} font-medium`}>Pull Shark - 2x</h3>
-                  <p className='text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>@khoirulhudaa opened pull requests that have been merged.</p>
+                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>@khoirulhudaa opened pull requests that have been merged.</p>
                 </div>
               </div>
             </a>
@@ -1352,7 +1353,7 @@ const Homepage: React.FC = () => {
                 <img src={Git2} alt="git" className="w-12" />
                 <div className='flex-1'>
                   <h3 className={`${selectTypeGit === 'git2' ? 'text-[#5E5CF8]' : 'text-white'} font-medium`}>Quickdraw</h3>
-                  <p className='text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Closing issues or pull requests within 5 minutes after they are opened.</p>
+                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Closing issues or pull requests within 5 minutes after they are opened.</p>
                 </div>
               </div>
             </a>
@@ -1361,7 +1362,7 @@ const Homepage: React.FC = () => {
                 <img src={Git3} alt="git" className="w-12" />
                 <div className='flex-1'>
                   <h3 className={`${selectType === 'git3' ? 'text-[#5cc7f8]' : 'text-white'} font-medium`}>Starstruck</h3>
-                  <p className='text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Starstruck: Having a repository with high popularity, starts.</p>
+                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Starstruck: Having a repository with high popularity, starts.</p>
                 </div>
               </div>
             </a>
@@ -1374,7 +1375,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>My various achievements</motion.small>
+            className='relative text-[11px] md:text-[16px] text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>My various achievements</motion.small>
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
@@ -1395,7 +1396,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>I have received awards in website development competitions, ranging from inter-student level at IKMI, to district level, and even national level.</motion.p>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>I have received awards in website development competitions, ranging from inter-student level at IKMI, to district level, and even national level.</motion.p>
 
           <div className="absolute left-[20%] w-[60%] h-[40px] py-[30%] transform -translate-y-[50%] -rotate-45 bg-[radial-gradient(circle_at_left_bottom,_#e6b7fe_10%,_#5049c2_20%,_rgba(87,78,255,0)_60%)] blur-[140px]"></div>
           <div className="absolute left-[15%] w-[100%] h-[40px] py-[30%] transform -translate-y-[72%] -rotate-45 bg-[radial-gradient(circle_at_left_bottom,_#e6b7fe_10%,_#5049c2_20%,_rgba(87,78,255,0)_0%)] blur-[25px]"></div>
@@ -1419,7 +1420,7 @@ const Homepage: React.FC = () => {
                     <h3 className={`$text-black font-medium`}>2nd - national</h3>
                     <ViewIcon className='z-[9999] text-slate-600 active:scale-[0.98] cursor-pointer' />
                   </div>
-                  <p className='text-[14px] mt-2 text-slate-500 leading-loose tracking-widest'>National-level Web Development Competition,</p>
+                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-500 leading-loose tracking-widest'>National-level Web Development Competition,</p>
                 </div>
               </div>
               <div className={`relative flex gap-6 items-center cursor-pointer px-4 md:px-6 py-16 border-l border-slate-300`}>
@@ -1432,7 +1433,7 @@ const Homepage: React.FC = () => {
                     <h3 className={`text-black font-medium`}>2nd - public</h3>
                     <ViewIcon className='z-[9999] text-slate-600 active:scale-[0.98] cursor-pointer' />
                   </div>
-                  <p className='text-[14px] mt-2 text-slate-500 leading-loose tracking-widest'>Public-level Web Design Competition for Students.</p>
+                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-500 leading-loose tracking-widest'>Public-level Web Design Competition for Students.</p>
                 </div>
               </div>
             </div>
@@ -1448,7 +1449,7 @@ const Homepage: React.FC = () => {
                     <h3 className={`${selectTypeGit === 'git1' ? 'text-[#f85c98]' : 'text-black'} font-medium`}>1st - district</h3>
                     <ViewIcon className='z-[9999] text-slate-600 active:scale-[0.98] cursor-pointer' />
                   </div>
-                  <p className='text-[14px] mt-2 text-slate-500 leading-loose tracking-widest'>Innovation competition in the technology category at the district level organized by the Bappelitbangda Office in 2024.</p>
+                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-500 leading-loose tracking-widest'>Innovation competition in the technology category at the district level organized by the Bappelitbangda Office in 2024.</p>
                 </div>
               </div>
             </div>
@@ -1464,7 +1465,7 @@ const Homepage: React.FC = () => {
                     <h3 className={`${selectTypeGit === 'git1' ? 'text-[#f85c98]' : 'text-black'} font-medium`}>1st - intramural</h3>
                     <ViewIcon className='z-[9999] text-slate-600 active:scale-[0.98] cursor-pointer' />
                   </div>
-                  <p className='text-[14px] mt-2 text-slate-500 leading-loose tracking-widest'>Inter-College Landing Page Web Competition exclusively.</p>
+                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-500 leading-loose tracking-widest'>Inter-College Landing Page Web Competition exclusively.</p>
                 </div>
               </div>
               <div className={`relative flex gap-6 items-center cursor-pointer px-4 md:px-6 py-16 border-t border-x border-slate-300`}>
@@ -1477,7 +1478,7 @@ const Homepage: React.FC = () => {
                     <h3 className={`text-black font-medium`}>BNSP - JWD</h3>
                     <ViewIcon className='z-[9999] text-slate-600 active:scale-[0.98] cursor-pointer' />
                   </div>
-                  <p className='text-[14px] mt-2 text-slate-500 leading-loose tracking-widest'>It's a certifications training program for Junior Web Developers.</p>
+                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-500 leading-loose tracking-widest'>It's a certifications training program for Junior Web Developers.</p>
                 </div>
               </div>
             </div>

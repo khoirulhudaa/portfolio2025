@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Laravel } from "../Assets";
 
-const ModalDetail = ({ onClose, textEnglish, features, title, implement }: { onClose: () => void, textEnglish: string, features: string[], title: string, implement: string[] }) => {
+const ModalDetail = ({ onClose, textEnglish, features, title }: { onClose: () => void, textEnglish: string, features: string[], title: string }) => {
 
     // Menambahkan event listener untuk ESC key
     useEffect(() => {
@@ -50,14 +50,14 @@ const ModalDetail = ({ onClose, textEnglish, features, title, implement }: { onC
                                         ))
                                     }
                                 </ul>
-                                <h3 className="font-bold text-[16px] text-black">Implementation:</h3>
+                                {/* <h3 className="font-bold text-[16px] text-black">Implementation:</h3>
                                 <ul className="flex flex-wrap border-t border-slate-300 py-6">
                                     {
                                         implement?.map((data: string, index: number) => (
                                             <li className="mb-4 mr-4 border-r border-slate-500 pr-4" key={index}>{data}</li>
                                         ))
                                     }
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
                     </div>
