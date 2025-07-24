@@ -219,19 +219,6 @@ const Homepage: React.FC = () => {
     "CRUD - user data",
     "CRUD - Outgoing items",
   ]
-
-  // const implement = [
-  //   "Queue/jobs with redis",
-  //   "Middleware/Throttle",
-  //   "Validation data",
-  //   "Create ERD (draw.io)",
-  //   "Repository (struktur foler)",
-  //   "Laravel horizon",
-  //   "JSON Web Tken",
-  //   "Traits",
-  //   "Model, View, Controller",
-  // ]
-
   const textEnglish = "Gudangku Admin Dashboard is a system for managing warehouse data in a structured and easy way. It features login security, ensuring that not everyone can access it. Key features include managing product data, types, units, and user data management."
 
   const resumeUrl = 'https://github.com/khoirulhudaa/resume/raw/main/CV_MUHAMMAD_KHOIRULHUDA.pdf';
@@ -397,7 +384,7 @@ const Homepage: React.FC = () => {
           </div>
 
           <div className='relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-            <h1 className='relative text-white z-40 text-[26px] md:text-4xl md:tracking-normal tracking-widest max-md:font-medium md:px-4 xl:text-8xl animate-fadeIn delay-[1000ms]'>FRONTEND WEB DEV <br /> WITH <span className="text-gray-500">REACT</span></h1>
+            <h1 className='relative text-white z-40 text-[28px] md:text-4xl md:tracking-normal tracking-widest max-md:font-medium md:px-4 xl:text-8xl animate-fadeIn delay-[1000ms]'>FRONTEND WEB DEV <br /> WITH <span className="text-gray-500">REACT</span></h1>
           </div>
 
           <div className='relative mt-6 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
@@ -440,7 +427,7 @@ const Homepage: React.FC = () => {
               viewport={{ once: true, amount: 0.2 }}
               className='relative text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'
             >
-              Skill in languages
+              Language and Library
             </motion.h2>
             <div className='hidden md:flex w-max'>
               <div className="relative flex items-center gap-6 p-6 text-transparent after:absolute after:right-0 after:w-px after:h-[300vh] after:bg-slate-900/80 dark:after:bg-white/10 after:-top-[100vh]">
@@ -454,7 +441,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[11px] md:text-[16px] text-slate-300 w-[96%] md:w-[66%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'
+            className='relative md:flex hidden text-[16px] text-slate-300 w-[96%] md:w-[66%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'
           >
             As a Frontend Web Developer, I specialize in building interactive and responsive user interfaces using React, Redux, TypeScript, and Tailwind CSS. I'm also experienced in integrating APIs.
           </motion.p>
@@ -673,7 +660,7 @@ const Homepage: React.FC = () => {
                 </div>
               </div>
             </motion.div>
-            <p className='text-[11px] md:text-[16px] relative text-base text-slate-300 w-[98%] md:w-[58%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Built various web applications using React and Next.js, serving as a full-stack developer, independently configuring APIs and third-party integrations.</p>
+            <p className='md:flex hidden text-[16px] relative text-base text-slate-300 w-[98%] md:w-[58%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Built various web applications using React and Next.js, serving as a full-stack developer, independently configuring APIs and third-party integrations.</p>
 
             <motion.div
               initial={{ opacity: 0, filter: 'blur(10px)' }}
@@ -742,7 +729,7 @@ const Homepage: React.FC = () => {
                           }
                         </h2>
                       </Link>
-                      <p className='text-[11px] md:text-[16px] relative text-slate-300 w-full md:w-[85%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>{data?.desc}</p>
+                      <p className='text-[14px] md:text-[16px] relative text-slate-300 w-full md:w-[85%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>{data?.desc}</p>
 
                       <Link to={data?.url} target="__blank">
                         <p className='cursor-pointer mt-6 hover:brightness-[90%] active:scale-[0.99] text-[#00B4F5] relative flex items-center text-base before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>{data?.title} in here <FaArrowRight className='ml-4 relative top-[0.8]' /> </p>
@@ -810,52 +797,7 @@ const Homepage: React.FC = () => {
                   </div>
                 ))
             }
-
           </div>
-
-          {/* <div id='laravel' className='select-none relative md:flex flex-col z-[444] pt-6 md:pt-4 md:mt-10 mb-5 w-full h-max border-slate-100'>
-            <motion.small
-              initial={{ opacity: 0, filter: 'blur(10px)' }}
-              whileInView={{ opacity: 1, filter: 'blur(0px)' }}
-              transition={{ duration: 0.5, ease: 'easeOut' }}
-              viewport={{ once: true, amount: 0.2 }}
-              className='relative text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Web development and landing page.</motion.small>
-            <motion.div
-              initial={{ opacity: 0, filter: 'blur(10px)' }}
-              whileInView={{ opacity: 1, filter: 'blur(0px)' }}
-              transition={{ duration: 0.5, ease: 'easeOut' }}
-              viewport={{ once: true, amount: 0.2 }}
-              className='w-full mt-4 mb-10 md:flex justify-between items-center z-[9999]'>
-              <h2 className='relative text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Laravel web apps</h2>
-              <div className='frelative z-[888] lex w-max'>
-                <div onClick={() => setDetailModal(true)} className="relative flex items-center gap-6 md:mt-0 mt-4 md:p-6 text-white after:absolute after:right-0 after:w-px after:h-[30vh] after:bg-slate-900/80 dark:after:bg-white/10 after:-top-[120px]">
-                  <p>Detail website</p>
-                  <LinkSquare02Icon className='w-6 h-6' />
-                </div>
-              </div>
-            </motion.div>
-            <motion.p
-              initial={{ opacity: 0, filter: 'blur(10px)' }}
-              whileInView={{ opacity: 1, filter: 'blur(0px)' }}
-              transition={{ duration: 0.5, ease: 'easeOut' }}
-              viewport={{ once: true, amount: 0.2 }}
-              className='relative text-base text-slate-300 w-[98%] md:w-[55%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>A web application to manage items, units, and types of goods in a warehouse online. Built with Laravel as the server and React as the client.</motion.p>
-
-            <div className="absolute left-[20%] w-[60%] h-[40px] py-[30%] transform -translate-y-[45%] -rotate-45 bg-[radial-gradient(circle_at_left_bottom,_#e6b7fe_10%,_#5049c2_20%,_rgba(87,78,255,0)_60%)] blur-[140px]"></div>
-            <div className="absolute left-[15%] w-[100%] h-[40px] py-[30%] transform -translate-y-[63%] -rotate-45 bg-[radial-gradient(circle_at_left_bottom,_#e6b7fe_10%,_#5049c2_20%,_rgba(87,78,255,0)_0%)] blur-[25px]"></div>
-            <img src={Pacticles2} alt='particles' className='absolute left-[28%] top-[-28%] w-[60%]' />
-
-            <motion.div
-              initial={{ opacity: 0, filter: 'blur(10px)' }}
-              whileInView={{ opacity: 1, filter: 'blur(0px)' }}
-              transition={{ duration: 0.5, ease: 'easeOut' }}
-              viewport={{ once: true, amount: 0.2 }}
-              className='relative w-full bg-white/20 backdrop-blur-sm md:rounded-[28px] border border-slate-300 md:p-4 z-40 items-center justify-between mt-12 md:mt-24'>
-              <div className='w-full h-full bg-[#ffffff] px-5 py-7 md:px-10 md:py-10 md:rounded-[24px]'>
-                <img src={Laravel1} alt="warehouse-management" />
-              </div>
-            </motion.div>
-          </div> */}
         </div>
 
         <div id='linkedin' className='select-none px-4 md:px-14 relative md:flex flex-col z-[444] pb-[30px] md:pb-[80px] md:pt-4 w-full h-max border-slate-100'>
@@ -871,7 +813,7 @@ const Homepage: React.FC = () => {
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className='w-full mt-4 mb-10 md:flex justify-between items-center '>
-            <h2 className='relative text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Recommend - in</h2>
+            <h2 className='relative text-[24px] md:text-[40px] text-white font-medium md:text-balance md:tracking-normal tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Recommendation</h2>
             <Link target='_blank' className="cursor-pointer" to={'https://www.linkedin.com/in/muhammadkhoirulhuda/'}>
               <div className='flex w-max cursor-pointer'>
                   <div className="relative flex items-center gap-6 md:mt-0 mt-4 md:p-6 text-white after:absolute after:right-0 after:w-px after:h-[30vh] after:bg-slate-900/80 dark:after:bg-white/10 after:-top-[120px]">
@@ -975,22 +917,35 @@ const Homepage: React.FC = () => {
                 </div>
               </a>
               <div className="w-full h-full mx-auto text-slate-300">
-                <section className='mt-12'>
-                  <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
-                    <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Web Application Development</p>
-                    <p className='text-[11px] md:text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Build and develop a web application using <strong>React</strong>, <strong>Vite</strong>, <strong>Redux</strong> and <strong>Tailwind CSS</strong> to create responsive and efficient user interfaces and Integrate and display architectural project data.</p>
-                  </div>
+               <section className='mt-12'>
+                <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
+                  <p className="relative text-base mb-6 font-semibold text-white">
+                    Web Application Development
+                  </p>
+                  <p className='text-sm md:text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest'>
+                    Built responsive school dashboards using <strong>React</strong>, <strong>Vite</strong>, <strong>Redux</strong>, and <strong>Tailwind CSS</strong>. Integrated real-time data and displayed architectural project information.
+                  </p>
+                </div>
 
-                  <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
-                    <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Web Features Testing and Debugging</p>
-                    <p className='text-[11px] md:text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Identify and analyze technical issues, and collaborate with the development team to find effective solutions.</p>
-                  </div>
+                <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
+                  <p className="relative text-base mb-6 font-semibold text-white">
+                    Data Management & UI Components
+                  </p>
+                  <p className='text-sm md:text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest'>
+                    Used <strong>TanStack Table</strong> and <strong>React Query</strong> for dynamic data handling, filtering, and pagination. Built accessible components with <strong>Radix UI</strong>.
+                  </p>
+                </div>
 
-                  <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
-                    <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Team Collaboration</p>
-                    <p className='text-[11px] md:text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Collaborate with backend developers, UI/UX designers, and project managers to ensure the web application development aligns with project specifications and business goals.</p>
-                  </div>
-                </section>
+                <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
+                  <p className="relative text-base mb-6 font-semibold text-white">
+                    Team Collaboration
+                  </p>
+                  <p className='text-sm md:text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest'>
+                    Worked with backend developers and school admins to align features with real needs, ensuring better user experience and system integration.
+                  </p>
+                </div>
+</section>
+
               </div>
             </div>
 
@@ -1054,17 +1009,17 @@ const Homepage: React.FC = () => {
                 <section className='mt-12'>
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Web Application Development</p>
-                    <p className='text-[11px] md:text-[16px] text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Build and develop a web application using <strong>React</strong>, <strong>Vite</strong>, <strong>Redux</strong> and <strong>Tailwind CSS</strong> to create responsive and efficient user interfaces and Integrate and display architectural project data.</p>
+                    <p className='text-sm md:text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Build and develop a web application using <strong>React</strong>, <strong>Vite</strong>, <strong>Redux</strong> and <strong>Tailwind CSS</strong> to create responsive and efficient user interfaces and Integrate and display architectural project data.</p>
                   </div>
 
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Web Features Testing and Debugging</p>
-                    <p className='text-[11px] md:text-[16px] text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Identify and analyze technical issues, and collaborate with the development team to find effective solutions.</p>
+                    <p className='text-sm md:text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Identify and analyze technical issues, and collaborate with the development team to find effective solutions.</p>
                   </div>
 
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Team Collaboration</p>
-                    <p className='text-[11px] md:text-[16px] text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Collaborate with backend developers, UI/UX designers, and project managers to ensure the web application development aligns with project specifications and business goals.</p>
+                    <p className='text-sm md:text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-widest '>Collaborate with backend developers, UI/UX designers, and project managers to ensure the web application development aligns with project specifications and business goals.</p>
                   </div>
                 </section>
               </div>
@@ -1126,17 +1081,17 @@ const Homepage: React.FC = () => {
                 <section className='mt-12'>
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Web Application Development</p>
-                    <p className='text-[11px] md:text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-normal '>Developing and launching a web geoportal application to display the distribution of locations and administrative boundaries of Cirebon Regency, acting as the Frotnend and Backend.</p>
+                    <p className='text-sm md:text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-normal '>Developing and launching a web geoportal application to display the distribution of locations and administrative boundaries of Cirebon Regency, acting as the Frotnend and Backend.</p>
                   </div>
 
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">API Integration</p>
-                    <p className='text-[11px] md:text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-normal '>Integrating the API from Express into React, using MongoDB Atlas for efficient data storage.</p>
+                    <p className='text-sm md:text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-normal '>Integrating the API from Express into React, using MongoDB Atlas for efficient data storage.</p>
                   </div>
 
                   <div className="relative mb-8 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">
                     <p className="relative text-base mb-6 font-semibold text-white before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]">Make Scalability</p>
-                    <p className='text-[11px] md:text-sm text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-normal '>Here’s the translation of your text into English:Implementing CMV for Express.js to ensure scalability and ease of future development.</p>
+                    <p className='text-sm md:text-justify w-[98%] md:w-[80%] mb-2 leading-loose tracking-normal '>Here’s the translation of your text into English:Implementing CMV for Express.js to ensure scalability and ease of future development.</p>
                   </div>
                 </section>
               </div>
@@ -1202,23 +1157,23 @@ const Homepage: React.FC = () => {
             <div className={`flex-1 flex gap-6 items-center cursor-pointer py-6 md:py-10`}>
               <Mortarboard02Icon size={50} className={`text-white md:flex hidden`} />
               <div className='flex-1'>
-                <h3 className={`text-white font-medium`}>B.Sc. in Computer Science</h3>
+                <h3 className={`text-[16px] text-white font-medium`}>B.Sc. in Computer Science</h3>
                 <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Programming, and problem-solving skills.</p>
               </div>
             </div>
-            <div className="relative md:block hidden flex-1 h-full md:rounded-[24px] md:bg-white/20 backdrop-blur-2xl md:p-4 ">
+            <div className="relative block flex-1 h-full md:rounded-[24px] md:bg-white/20 backdrop-blur-2xl md:p-4 ">
               <div className='w-full h-full md:bg-white md:rounded-[20px]'>
                 <div className={`flex gap-6 items-center cursor-pointer md:px-8 py-6 md:py-10 `}>
                   <Calendar04Icon size={50} className={`text-black md:flex hidden`} />
                   <div className='flex-1'>
-                    <h3 className={`text-white md:text-black font-medium`}>Graduation year</h3>
+                    <h3 className={`text-[16px] text-white md:text-black font-medium`}>Graduation year</h3>
                     <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 md:text-slate-600 leading-loose tracking-widest'>I received a graduation certificate in May.</p>
                   </div>
                 </div>
                 <div className={`relative flex gap-6 items-center cursor-pointer md:px-8 py-6 md:py-10 before:absolute before:top-0 before:h-px before:w-full before:bg-slate-900/20 dark:before:bg-slate-900/30 before:-left-[0px]`}>
                   <InformationDiamondIcon size={50} className={` md:flex hidden ${selectType === 'slicing' ? 'text-[#5cc7f8]' : 'text-black'}`} />
                   <div className='flex-1'>
-                    <h3 className={`${selectType === 'slicing' ? 'text-[#5cc7f8]' : 'text-white md:text-black'} font-medium`}>IPK YUDISIUM (3,44)</h3>
+                    <h3 className={`text-[16px] ${selectType === 'slicing' ? 'text-[#5cc7f8]' : 'text-white md:text-black'} font-medium`}>IPK YUDISIUM (3,44)</h3>
                     <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 md:text-slate-600 leading-loose tracking-widest'>I achieved a GPA of <b>3,44</b> at the end of my studies.</p>
                   </div>
                 </div>
