@@ -670,23 +670,23 @@ const Homepage: React.FC = () => {
               className='relative z-[99999999] w-full grid grid-cols-1 md:grid-cols-3 mt-8 md:mt-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
               <div onClick={() => { setSelectType('apps'), setSelectAccordion(1) }} className={`flex gap-6 ${selectType === 'apps' ? 'bg-[#ff69df11]' : ''} items-center cursor-pointer px-4 py-4 md:px-6 md:py-6`}>
                 <BrowserIcon size={46} className={`${selectType === 'apps' ? 'text-[#f85c98]' : 'text-white'}`} />
-                <div className='flex-1'>
+                <div className='flex-1 cursor-pointer'>
                   <h3 className={`${selectType === 'apps' ? 'text-[#f85c98]' : 'text-white'} font-medium`}>Web apps ({dataProducts?.filter((d: any) => d.category === 'apps')?.length})</h3>
-                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Building web apps that simplify tasks and boost productivity.</p>
+                  <p className='cursor-pointer text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Building web apps that simplify tasks and boost productivity.</p>
                 </div>
               </div>
               <div onClick={() => { setSelectType('API'), setSelectAccordion(1) }} className={`flex gap-6 ${selectType === 'API' ? 'bg-[#9e69ff11]' : ''} items-center cursor-pointer px-4 py-4 md:px-6 md:py-6 md:border-x-[0.5px] border-gray-700`}>
                 <LinkSquare02Icon size={45} className={`${selectType === 'API' ? 'text-[#5E5CF8]' : 'text-white'}`} />
-                <div className='flex-1'>
+                <div className='flex-1 cursor-pointer'>
                   <h3 className={`${selectType === 'API' ? 'text-[#5E5CF8]' : 'text-white'} font-medium`}>Integrate API ({dataProducts?.filter((d: any) => d.category === 'API')?.length})</h3>
-                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Integrating APIs to ensure fast and seamless functionality.</p>
+                  <p className='cursor-pointer text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Integrating APIs to ensure fast and seamless functionality.</p>
                 </div>
               </div>
               <div onClick={() => { setSelectType('slicing'), setSelectAccordion(1) }} className={`flex gap-6 ${selectType === 'slicing' ? 'bg-[#69dcff11]' : ''} items-center cursor-pointer px-4 py-4 md:px-6 md:py-6`}>
                 <PaintBrush04Icon size={46} className={`${selectType === 'slicing' ? 'text-[#5cc7f8]' : 'text-white'}`} />
-                <div className='flex-1'>
+                <div className='flex-1 cursor-pointer'>
                   <h3 className={`${selectType === 'slicing' ? 'text-[#5cc7f8]' : 'text-white'} font-medium`}>Slicing ({dataProducts?.filter((d: any) => d.category === 'slicing')?.length})</h3>
-                  <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Transforming designs into clean, and efficient interfaces.</p>
+                  <p className='cursor-pointer text-[11px] md:text-[14px] mt-2 text-slate-300 leading-loose tracking-widest'>Transforming designs into clean, and efficient interfaces.</p>
                 </div>
               </div>
             </motion.div>
@@ -877,7 +877,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[11px] md:text-[16px] text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Experience in industry</motion.small>
+            className='relative text-[11px] md:text-[16px] text-[#00B4F5] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Experience in industry</motion.small>
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
@@ -899,7 +899,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Interned as a Frontend Web Developer at Konstruksi.AI (South Jakarta) remotely for 1 year. Assisted in building web applications and coordinated with the team.</motion.p>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Full-time Frontend Web Developer at PT Karya Sains dan Riset, remotely for 1 year, building school admin dashboard web apps with React, Vite, and Tailwind CSS, and enhancing UX.</motion.p>
 
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
@@ -910,9 +910,9 @@ const Homepage: React.FC = () => {
             <div className='w-full md:w-[55%] h-max'>
               <a href="https://konstruksi.ai/" target="__blank">
                 <div className='relative flex gap-4 mb-6 items-center cursor-pointer before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-                  <Building02Icon className="bg-white scale-[1.3]" />
+                  <Building02Icon className="bg-white scale-[1.3] md:flex hidden" />
                   <div className='flex-1'>
-                    <h2 className='text-white text-[28px] relative font-medium'>PT Karya Inovasi Digital</h2>
+                    <h2 className='md:bg-transparent md:px-0 px-2 w-max bg-white text-black md:text-white text-[24px] md:text-[28px] relative font-medium'>PT Karya Sains dan Riset</h2>
                   </div>
                 </div>
               </a>
@@ -966,7 +966,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[11px] md:text-[16px] text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Experience in industry</motion.small>
+            className='relative text-[11px] md:text-[16px] text-[#00B4F5] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Experience in industry</motion.small>
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
@@ -999,9 +999,9 @@ const Homepage: React.FC = () => {
             <div className='w-full md:w-[55%] h-max'>
               <a href="https://konstruksi.ai/" target="__blank">
                 <div className='relative flex gap-4 mb-6 items-center cursor-pointer before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-                  <img src={KonstruksiLogo} alt="logo-konstruksi.ai" className="w-9" />
+                  <img src={KonstruksiLogo} alt="logo-konstruksi.ai" className="md:flex hidden w-9" />
                   <div className='flex-1'>
-                    <h2 className='text-white text-[28px] relative font-medium'>Konstruksi.AI</h2>
+                    <h2 className='md:bg-transparent w-max px-2 bg-white text-black md:text-white text-[24px] md:text-[28px] relative font-medium'>Konstruksi.AI</h2>
                   </div>
                 </div>
               </a>

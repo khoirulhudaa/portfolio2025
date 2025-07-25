@@ -36,8 +36,11 @@ const FooterComp = () => {
                     <div className="absolute top-0 left-0 w-[10%] h-full before:absolute before:left-0 before:w-px before:h-full before:bg-slate-900/80 dark:before:bg-slate-100/5 before:-top-[0px]">
                     </div>
                     <ul className="list-none h-full ml-4 md:ml-[10%] flex flex-col justify-between text-white text-[14px] font-normal">
-                        <Link to={'https://github.com/khoirulhudaadev'} target="__blank">
+                        <Link to={'https://github.com/khoirulhudaadev'} target="__blank" className="md:flex hidden">
                             <li className="overflow-hidden hover:text-indigo-500 md:mb-4 relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-slate-100/5 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-slate-100/5 after:-left-[100vw] py-6">Github Account 2</li>
+                        </Link>
+                        <Link to={'https://github.com/khoirulhudaa'} target="__blank"  className="md:hidden flex">
+                            <li className="overflow-hidden hover:text-indigo-500 md:mb-4 relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-slate-100/5 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-slate-100/5 after:-left-[100vw] py-6">Github Account</li>
                         </Link>
                         <Link to={'#certifications'} target="__blank">
                             <li className='overflow-hidden hover:text-indigo-500 md:mb-4 relative py-6 md:flex hidden'>Certifications</li>
