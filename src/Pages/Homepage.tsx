@@ -1122,7 +1122,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[11px] md:text-[16px] text-[#00B4F5] text-[14px] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Computer science</motion.small>
+            className='relative text-[11px] md:text-[16px] text-[#00B4F5] before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Computer science</motion.small>
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
@@ -1154,7 +1154,7 @@ const Homepage: React.FC = () => {
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className='relative text-[11px] md:text-[16px] z-[99999999] w-full py-4 grid grid-cols-1 md:grid-cols-2 md:mt-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-            <div className={`flex-1 flex gap-6 items-center cursor-pointer py-6 md:py-10`}>
+            <div className={`flex-1 flex gap-6 items-center py-6 md:py-10`}>
               <Mortarboard02Icon size={50} className={`text-white md:flex hidden`} />
               <div className='flex-1'>
                 <h3 className={`text-[16px] text-white font-medium`}>B.Sc. in Computer Science</h3>
@@ -1163,14 +1163,14 @@ const Homepage: React.FC = () => {
             </div>
             <div className="relative block flex-1 h-full md:rounded-[24px] md:bg-white/20 backdrop-blur-2xl md:p-4 ">
               <div className='w-full h-full md:bg-white md:rounded-[20px]'>
-                <div className={`flex gap-6 items-center cursor-pointer md:px-8 py-6 md:py-10 `}>
+                <div className={`flex gap-6 items-center md:px-8 py-6 md:py-10 `}>
                   <Calendar04Icon size={50} className={`text-black md:flex hidden`} />
                   <div className='flex-1'>
                     <h3 className={`text-[16px] text-white md:text-black font-medium`}>Graduation year</h3>
                     <p className='text-[11px] md:text-[14px] mt-2 text-slate-300 md:text-slate-600 leading-loose tracking-widest'>I received a graduation certificate in May.</p>
                   </div>
                 </div>
-                <div className={`relative flex gap-6 items-center cursor-pointer md:px-8 py-6 md:py-10 before:absolute before:top-0 before:h-px before:w-full before:bg-slate-900/20 dark:before:bg-slate-900/30 before:-left-[0px]`}>
+                <div className={`relative flex gap-6 items-center md:px-8 py-6 md:py-10 before:absolute before:top-0 before:h-px before:w-full before:bg-slate-900/20 dark:before:bg-slate-900/30 before:-left-[0px]`}>
                   <InformationDiamondIcon size={50} className={` md:flex hidden ${selectType === 'slicing' ? 'text-[#5cc7f8]' : 'text-black'}`} />
                   <div className='flex-1'>
                     <h3 className={`text-[16px] ${selectType === 'slicing' ? 'text-[#5cc7f8]' : 'text-white md:text-black'} font-medium`}>IPK YUDISIUM (3,44)</h3>
