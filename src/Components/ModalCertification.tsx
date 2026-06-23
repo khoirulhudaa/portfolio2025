@@ -1,4 +1,3 @@
-import { Cancel01Icon } from "hugeicons-react";
 import { X } from "lucide-react";
 import { useEffect } from "react";
 
