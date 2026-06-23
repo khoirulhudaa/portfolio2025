@@ -3,7 +3,7 @@ import { ArrowRight02Icon, ArrowUp01Icon, BrowserIcon, Building02Icon, Calendar0
 import React, { useEffect, useRef, useState } from 'react'
 import { FaArrowRight, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import { Build, Cirebon, Diskominfo, Diskominfo2, Diskominfo3, Firebase, Git1, Git2, Git3, Google, Inovasi, Jakarta, Jannah, Jest, JWD, KonstruksiLogo, Leaflet, Luvlywed, Majalengka, Node, OMDB, Pacticles2, PakYos, Reacts, Redux, Sigeo1, Sigeo2, Survey, Team, TS, TW, Unipay, Unipay2, Weather, Winner, Xendit } from '../Assets'
+import { Build, Cirebon, Diskominfo, Diskominfo2, Diskominfo3, Firebase, Git1, Git2, Ex2, Git3, Google, Inovasi, Jakarta, Jannah, JWD, KonstruksiLogo, Leaflet, Luvlywed, Majalengka, OMDB, Pacticles2, PakYos, Ex, Reacts, Redux, Sigeo1, Sigeo2, Survey, Team, TS, TW, Unipay, Unipay2, Weather, Winner, Xendit } from '../Assets'
 import FooterComp from "../Components/Footer"
 import InfiniteSlider from "../Components/InfiniteSlider"
 import ModalSearch from "../Components/Modal"
@@ -91,62 +91,18 @@ const Homepage: React.FC = () => {
 
   const dataProducts = [
     {
-      title: "Unipay",
-      desc: "This project trains API integration skills by displaying the weather conditions of a specific area.",
-      image1: Unipay,
-      image2: Unipay2,
-      url: "https://unipay-app.vercel.app/",
-      category: "apps",
-      fe: "nextjs",
-      be: "express",
-      paymentGateway: "xendit",
-      stateManagement: "redux",
-      db: "mongodb",
-      style: "tailwind",
-    },
-    {
-      title: "WebGIS",
-      desc: "An interactive platform to visualize geographic, coordiinates, data and weather for specific areas",
-      image1: Sigeo1,
-      image2: Sigeo2,
-      url: "https://sigeo-user.vercel.app/",
+      title: "Taptiptup",
+      desc: "Donation platform for streamers with the lowest fee in the market — only 3% per donation and Rp4.000 flat per withdrawal. Built with real-time overlay alerts, media share, voice notes, gift & nominal donations, sub-a-thon, milestones, and more.",
+      image1: '/taptiptup.png',
+      image2: '/taptiptup2.png',
+      url: "https://taptiptup.vercel.app/",
       category: "apps",
       fe: "react",
       be: "express",
-      paymentGateway: "none",
-      stateManagement: "redux",
+      paymentGateway: "midtrans",
+      realtime: "socket.io",   
       db: "mongodb",
       style: "tailwind",
-    },
-    // {
-    //   title: "Chater - web chat",
-    //   desc: "Web application for conducting discussions through chat within a group. You can add new groups and create new messages.",
-    //   image1: Chater1,
-    //   image2: Chater2,
-    //   url: "https://chater-firebase.vercel.app/auth/login",
-    //   category: "apps",
-    //   fe: "reactjs",
-    //   be: "express",
-    //   Auth: "google auth",
-    //   paymentGateway: "none",
-    //   stateManagement: "none",
-    //   db: "Firebase",
-    //   style: "tailwind",
-    // },
-    {
-      title: "Survey online",
-      desc: "Web application is designed to simplify online survey completion for your thesis research needs in a practical and effective way.",
-      image1: Survey,
-      image2: "",
-      url: "https://survey-sigeo.vercel.app/",
-      category: "apps",
-      fe: "reactjs",
-      be: "express",
-      Auth: "none",
-      paymentGateway: "none",
-      stateManagement: "none",
-      db: "Mongodb",
-      style: "Vanilla CSS",
     },
     {
       title: "Al-quran Jannah",
@@ -274,22 +230,22 @@ const Homepage: React.FC = () => {
             <div className='md:flex hidden w-max text-slate-300 py-5 h-max'>
               <ul className={`w-[80%] flex items-center justify-between ${isScrolled ? 'text-[14px]' : ''}`}>
                 <a href="#languages">
-                  <li className='mr-10 animate-fadeIn hover:text-white border-b hover:border-slate-400 border-transparent'>Languages</li>
+                  <li className='cursor-pointer mr-10 animate-fadeIn hover:text-white border-b hover:border-slate-400 border-transparent'>Languages</li>
                 </a>
                 <a href="#technologies">
-                  <li className='mr-10 animate-fadeIn hover:text-white border-b hover:border-slate-400 border-transparent'>Technologies</li>
+                  <li className='cursor-pointer mr-10 animate-fadeIn hover:text-white border-b hover:border-slate-400 border-transparent'>Technologies</li>
                 </a>
-                <a href="#products">
-                  <li className='mr-10 animate-fadeIn hover:text-white border-b hover:border-slate-400 border-transparent'>Products</li>
+                <a href="#projects">
+                  <li className='cursor-pointer mr-10 animate-fadeIn hover:text-white border-b hover:border-slate-400 border-transparent'>Projects</li>
                 </a>
                 <a href="#linkedin">
-                  <li className='mr-10 animate-fadeIn hover:text-white border-b hover:border-slate-400 border-transparent'>Linkedin</li>
+                  <li className='cursor-pointer mr-10 animate-fadeIn hover:text-white border-b hover:border-slate-400 border-transparent'>Linkedin</li>
                 </a>
                 <a href="#experience">
-                  <li className='mr-10 animate-fadeIn hover:text-white border-b hover:border-slate-400 border-transparent'>Experiences</li>
+                  <li className='cursor-pointer mr-10 animate-fadeIn hover:text-white border-b hover:border-slate-400 border-transparent'>Experiences</li>
                 </a>
                 <a href="#certifications">
-                  <li className='mr-10 animate-fadeIn hover:text-white border-b hover:border-slate-400 border-transparent'>Certifications</li>
+                  <li className='cursor-pointer mr-10 animate-fadeIn hover:text-white border-b hover:border-slate-400 border-transparent'>Certifications</li>
                 </a>
               </ul>
             </div>
@@ -303,22 +259,22 @@ const Homepage: React.FC = () => {
             </div>
 
             <ul className='w-[80%] mt-4 flex flex-col'>
-              <a href="#home" className='w-full mb-4 border-b border-b-slate-200'>
+              <a href="#home" className='cursor-pointer w-full mb-4 border-b border-b-slate-200'>
                 <li className='py-4' onClick={() => setSidebar(false)}>Home</li>
               </a>
-              <a href="#technologies" className='w-full mb-4 border-b border-b-slate-200'>
+              <a href="#technologies" className='cursor-pointer w-full mb-4 border-b border-b-slate-200'>
                 <li className='py-4' onClick={() => setSidebar(false)}>Technologies</li>
               </a>
-              <a href="#products" className='w-full mb-4 border-b border-b-slate-200'>
-                <li className='py-4' onClick={() => setSidebar(false)}>Products</li>
+              <a href="#projects" className='cursor-pointer w-full mb-4 border-b border-b-slate-200'>
+                <li className='py-4' onClick={() => setSidebar(false)}>Projects</li>
               </a>
-              <a href="#linkedin" className='w-full mb-4 border-b border-b-slate-200'>
+              <a href="#linkedin" className='cursor-pointer w-full mb-4 border-b border-b-slate-200'>
                 <li className='py-4' onClick={() => setSidebar(false)}>Linkedin</li>
               </a>
-              <a href="#experience" className='w-full mb-4 border-b border-b-slate-200'>
+              <a href="#experience" className='cursor-pointer w-full mb-4 border-b border-b-slate-200'>
                 <li className='py-4' onClick={() => setSidebar(false)}>Experiences</li>
               </a>
-              <a href="#certifications" className='w-full mb-4 border-b border-b-slate-200'>
+              <a href="#certifications" className='cursor-pointer w-full mb-4 border-b border-b-slate-200'>
                 <li className='py-4' onClick={() => setSidebar(false)}>Certifications</li>
               </a>
             </ul>
@@ -380,11 +336,11 @@ const Homepage: React.FC = () => {
 
 
           <div className='relative mb-6 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-            <p className='text-center md:px-3 py-2 w-max text-white flex items-center animate-fadeIn delay-[1000ms]'>Frontend Developer - <span className="text-gray-500 ml-1">React</span></p>
+            <p className='text-center md:px-3 py-2 w-max text-white flex items-center animate-fadeIn delay-[1000ms]'>Fullstack Developer - <span className="text-gray-500 ml-1">React</span></p>
           </div>
 
           <div className='relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-            <h1 className='relative text-white z-40 text-[28px] md:text-4xl md:tracking-normal tracking-widest max-md:font-medium md:px-4 xl:text-8xl animate-fadeIn delay-[1000ms]'>FRONTEND WEB DEV <br /> WITH <span className="text-gray-500">REACT</span></h1>
+            <h1 className='relative text-white z-40 text-[28px] md:text-4xl md:tracking-normal tracking-widest max-md:font-medium md:px-4 xl:text-8xl animate-fadeIn delay-[1000ms]'>FULLSTACK DEVELOPER </h1>
           </div>
 
           <div className='relative mt-6 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
@@ -392,7 +348,7 @@ const Homepage: React.FC = () => {
           </div>
 
           <div className='relative z-[99999] my-7 py-2 flex-col md:flex-row md:flex items-center before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-            <div onClick={() => handleDownload()} className='relative active:scale-[0.98] cursor-pointer bg-white flex hover:brightness-[90%] z-[99999] outline-0 md:ml-4 md:mr-6 rounded-full px-4 py-3 w-max lg h-max text-center text-[14px] font-normal text-black'>Download CV (PDF)</div>
+            <div onClick={() => handleDownload()} className='relative active:scale-[0.98] cursor-pointer bg-white flex hover:brightness-[90%] z-[99999] outline-0 md:ml-4 md:mr-6 rounded-full px-4 py-3 w-max lg h-max text-center text-[14px] font-normal text-black'>Download CV</div>
             <div onClick={() => setActiveModalSearch(true)} className="active:scale-[0.99] outline-0 grid md:mt-0 mt-4 w-full md:w-[480px] grid-cols-[auto_1fr_auto] items-center gap-1 rounded-full px-4 py-3 text-left text-sm/6 sm:w-80 bg-white/5 text-white/50 animate-fadeIn delay-[1000ms]">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" className="-ml-0.5 size-4 fill-gray-600 dark:fill-gray-500">
                 <path fillRule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clipRule="evenodd">
@@ -458,9 +414,9 @@ const Homepage: React.FC = () => {
             className='relative text-[11px] md:text-[16px] w-full rounded-[24px] bg-white/20 backdrop-blur-2xl p-4 hidden md:flex items-center md:flex-no-wrap flex-wrap justify-between z-[999] mt-12'>
             <div className='relative z-[999] w-full h-full rounded-[20px] bg-white p-10 border border-black flex items-center justify-between  '>
               <img loading='lazy' src={Reacts} alt='iconLanguage' className='w-[34px] md:w-[80px] md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
-              <img loading='lazy' src={Node} alt='iconLanguage' className='w-[34px] md:w-[80px] md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
-              <img loading='lazy' src={Redux} alt='iconLanguage' className='w-[34px] md:w-[80px] md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
-              <img loading='lazy' src={TS} alt='iconLanguage' className='w-[34px] md:w-[80px] md:flex hidden md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
+              <img loading='lazy' src={Ex2} alt='iconLanguage' className='w-[40px] md:w-[100px] md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
+              <img loading='lazy' src={Redux} alt='iconLanguage' className='w-[34px] md:w-[90px] md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
+              <img loading='lazy' src={TS} alt='iconLanguage' className='w-[34px] md:w-[75px] md:flex hidden md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
               <img loading='lazy' src={TW} alt='iconLanguage' className='w-[34px] md:w-[80px] md:mb-0 mb-5 md:mr-14 z-[99999999999] grayscale-[100%]' />
             </div>
           </motion.div>
@@ -529,15 +485,14 @@ const Homepage: React.FC = () => {
                   <div className="md:after:absolute md:after:top-0 md:after:right-0 after:h-full md:after:w-px md:after:bg-slate-900/80 dark:after:bg-white/10"></div>
 
                   <div className='relative flex gap-2 h-[50px] items-center before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-                    <img src={Jest} alt="logo-ssh" className="relative z-[44] w-[8%] md:w-[11%]" />
+                    <img src={Ex} alt="logo-node" className="relative z-[44] w-[8%] md:w-[11%]" />
                     <div className='flex-1'>
-                      <h3 className={`text-white font-bold text-[22px] md:text-[26px]`}>Jest</h3>
+                      <h3 className={`text-white font-bold text-[22px] md:text-[26px]`}>Express</h3>
                     </div>
                   </div>
                   <div className="w-full mt-6">
                     <p className="text-[11px] md:text-[16px] text-base text-slate-300 tracking-widest  leading-loose">
-                      A delightful JavaScript testing framework with a focus on simplicity, performance, and developer experience.
-                    </p>
+                    A minimalist, flexible, and fast web framework for Node.js, providing a robust set of features for building web apps and APIs.                    </p>
                   </div>
                   <Link to={'https://www.figma.com/'} target="__blank">
                     <div className='border border-white md:border-black mt-4 md:mt-10 mb-12 md:mb-3 md:bg-white text-white md:text-black md:rounded-full md:w-[50px] h-[50px] hidden md:flex items-center justify-center cursor-pointer active:scale-[0.99] hover:brightness-95 duration-100 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw] relative'>
@@ -636,7 +591,7 @@ const Homepage: React.FC = () => {
             </motion.div>
           </div>
 
-          <div id="products" className='mt-2'>
+          <div id="projects" className='mt-2'>
             <motion.small
               initial={{ opacity: 0, filter: 'blur(10px)' }}
               whileInView={{ opacity: 1, filter: 'blur(0px)' }}
@@ -660,7 +615,7 @@ const Homepage: React.FC = () => {
                 </div>
               </div>
             </motion.div>
-            <p className='md:flex hidden text-[16px] relative text-base text-slate-300 w-[98%] md:w-[58%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Built various web applications using React and Next.js, serving as a full-stack developer, independently configuring APIs and third-party integrations.</p>
+            {/* <p className='md:flex hidden text-[16px] relative text-base text-slate-300 w-[98%] md:w-[58%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Built various web applications using React and Next.js, serving as a full-stack developer, independently configuring APIs and third-party integrations.</p> */}
 
             <motion.div
               initial={{ opacity: 0, filter: 'blur(10px)' }}
@@ -731,7 +686,7 @@ const Homepage: React.FC = () => {
                       </Link>
                       <p className='text-[14px] md:text-[16px] relative text-slate-300 w-full md:w-[85%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>{data?.desc}</p>
 
-                      <Link to={data?.url} target="__blank">
+                      <Link to={data?.url} target="_blank">
                         <p className='cursor-pointer mt-6 hover:brightness-[90%] active:scale-[0.99] text-[#00B4F5] relative flex items-center text-base before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>{data?.title} in here <FaArrowRight className='ml-4 relative top-[0.8]' /> </p>
                       </Link>
 
@@ -747,9 +702,9 @@ const Homepage: React.FC = () => {
                           <p className="h-full pl-3 w-[40%] text-right">Frontend</p>
                         </div>
                         <div className='relative py-3 hidden md:flex border-y border-white/20 items-center flex-1 justify-between'>
-                          <p className="text-white h-full rounded-[4px] w-1/2">{data?.stateManagement}</p>
+                          <p className="text-white h-full rounded-[4px] w-1/2">{data?.stateManagement || data?.realtime}</p>
                           <ArrowRight02Icon className="w-[18px] mx-2" />
-                          <p className="h-full pl-3 w-[40%] text-right">State</p>
+                          <p className="h-full pl-3 w-[40%] text-right">{data?.stateManagement ? 'State' : 'Realtime'}</p>
                         </div>
                         <div className='relative py-3 flex border-y border-white/20 items-center flex-1 justify-between'>
                           <p className="text-white h-full rounded-[4px] w-1/2">{data?.be}</p>
@@ -773,14 +728,14 @@ const Homepage: React.FC = () => {
                       className='relative w-full md:min-h-[400px] md:rounded-[24px] z-[8888888888888] flex justify-center items-center md:p-4 border border-white bg-white/20 backdrop-blur-2xl'
                     >
 
-                      <div className="absolute z-[-1] right-0 w-[100%] md:py-[30%] transform md:-translate-y-[70%] -rotate-45 
+                      <div className="absolute z-[-2] right-[-25%] w-[100%] md:py-[30%] transform md:-translate-y-[70%] -rotate-45 
                               bg-[radial-gradient(circle_at_left_bottom,#e6b7fe_10%,#5049c2_10%,rgba(87,78,255,0)_60%)] 
                               blur-[40px]">
                       </div>
 
                       <motion.div
                         key={selectAccordion} // Animasi berjal an setiap kali konten berubah
-                        className='relative flex shadow-[0_35px_30px_rgba(0,0,30,0.4)] justify-center items-center md:rounded-[24px] overflow-hidden bg-white/20 backdrop-blur-2xl md:p-2 w-full h-full'
+                        className='relative flex shadow-[0_35px_30px_rgba(0,0,30,0.4)] justify-center items-center md:rounded-[24px] overflow-hidden bg-white/20 backdrop-blur-2xl md:p-0 w-full h-full'
                         initial={{ opacity: 0, y: 40 }} // Muncul dari bawah
                         animate={{ opacity: 1, y: 0 }} // Naik ke posisi normal
                         exit={{ opacity: 0, y: -20 }} // Keluar ke atas (opsional)
@@ -828,7 +783,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-[98%] md:w-[70%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>A direct recommendation from the co-founder of the company where I interned (Konstruksi.AI), who provided positive feedback on my performance during the internship as a frontend developer.</motion.p>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-[98%] md:w-[80%] leading-loose tracking-widest before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>A direct recommendation from the co-founder of the company where I interned (Konstruksi.AI), who provided positive feedback on my performance during the internship as a frontend developer.</motion.p>
 
           <div className="absolute left-[20%] z-[-1] w-[60%] h-[40px] py-[30%] transform -translate-y-[45%] -rotate-45 bg-[radial-gradient(circle_at_left_bottom,_#e6b7fe_10%,_#5049c2_20%,_rgba(87,78,255,0)_60%)] blur-[140px]"></div>
           <div className="absolute z-[-1] left-[15%] w-[100%] h-[40px] py-[30%] transform -translate-y-[63%] -rotate-45 bg-[radial-gradient(circle_at_left_bottom,_#e6b7fe_10%,_#5049c2_20%,_rgba(87,78,255,0)_0%)] blur-[25px]"></div>
@@ -894,20 +849,14 @@ const Homepage: React.FC = () => {
               </Link>
             </div>
           </motion.div>
-          <motion.p
-            initial={{ opacity: 0, filter: 'blur(10px)' }}
-            whileInView={{ opacity: 1, filter: 'blur(0px)' }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-            viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Full-time Frontend Web Developer at PT Karya Sains dan Riset, remotely for 1 year, building school admin dashboard web apps with React, Vite, and Tailwind CSS, and enhancing UX.</motion.p>
-
+         
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className='relative text-[11px] md:text-[16px] py-2 w-full h-max md:h-[600px] md:flex mt-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-            <div className='w-full md:w-[55%] h-max'>
+            <div className='w-full md:w-[70%] h-max'>
               <a href="https://konstruksi.ai/" target="__blank">
                 <div className='relative flex gap-4 mb-6 items-center cursor-pointer before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
                   <Building02Icon className="bg-white scale-[1.3] md:flex hidden" />
@@ -944,7 +893,7 @@ const Homepage: React.FC = () => {
                     Worked with backend developers and school admins to align features with real needs, ensuring better user experience and system integration.
                   </p>
                 </div>
-</section>
+                </section>
 
               </div>
             </div>
@@ -983,20 +932,14 @@ const Homepage: React.FC = () => {
               </Link>
             </div>
           </motion.div>
-          <motion.p
-            initial={{ opacity: 0, filter: 'blur(10px)' }}
-            whileInView={{ opacity: 1, filter: 'blur(0px)' }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-            viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Interned as a Frontend Web Developer at Konstruksi.AI (South Jakarta) remotely for 1 year. Assisted in building web applications and coordinated with the team.</motion.p>
-
+         
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className='relative text-[11px] md:text-[16px] py-2 w-full h-max md:h-[600px] md:flex mt-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-            <div className='w-full md:w-[55%] h-max'>
+            <div className='w-full md:w-[70%] h-max'>
               <a href="https://konstruksi.ai/" target="__blank">
                 <div className='relative flex gap-4 mb-6 items-center cursor-pointer before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
                   <img src={KonstruksiLogo} alt="logo-konstruksi.ai" className="md:flex hidden w-9" />
@@ -1058,23 +1001,20 @@ const Homepage: React.FC = () => {
               </div>
             </div>
           </motion.div>
-          <motion.p
-            initial={{ opacity: 0, filter: 'blur(10px)' }}
-            whileInView={{ opacity: 1, filter: 'blur(0px)' }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-            viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>Interned at the Communication Department of Cirebon Regency for 3 months, in the role of Data Analyst and Web Developer as a secondary responsibility.</motion.p>
-
+        
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className='relative text-[11px] md:text-[16px] py-2 w-full h-max md:h-[600px] md:flex mt-14 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-            <div className='w-full md:w-[55%] h-max'>
+            <div className='w-full md:w-[70%] h-max'>
               <a href="https://cirebonkab.go.id/ova_dep/dinas-komunikasi-dan-informatika/" target="__blank">
                 <div className='relative flex gap-4 mb-6 items-center cursor-pointer before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-                  <img src={Diskominfo} alt="logo-konstruksi.ai" className="w-32" />
+                  <img src={Diskominfo} alt="logo-diskominfo" className="w-32" />
+                  <div className='flex-1'>
+                    <h2 className='md:bg-transparent w-max px-2 bg-white text-black md:text-white text-[24px] md:text-[28px] relative font-medium'>DISKOMINFO</h2>
+                  </div>
                 </div>
               </a>
               <div className="w-full h-full mx-auto text-slate-300">
@@ -1146,7 +1086,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>I pursued a four-year bachelor's degree in Informatics Engineering at a private university in Cirebon, STMIK IKMI Cirebon, located in Majasem.</motion.p>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[70%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>I pursued a four-year bachelor's degree in Informatics Engineering at a private university in Cirebon, STMIK IKMI Cirebon, located in Majasem.</motion.p>
 
           <motion.div
             initial={{ opacity: 0, filter: 'blur(10px)' }}
@@ -1273,7 +1213,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>My performance related to my activities on GitHub shows that I have been quite active in deploying both old and new projects throughout 2024.</motion.p>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[70%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>My performance related to my activities on GitHub shows that I have been quite active in deploying both old and new projects throughout 2024.</motion.p>
 
           {/* <div className="md:w-[86vw] h-max mt-12 mx-auto bg-white/20 backdrop-blur-2xl md:p-4 md:rounded-[20px]">
             <motion.div
@@ -1351,7 +1291,7 @@ const Homepage: React.FC = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[55%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>I have received awards in website development competitions, ranging from inter-student level at IKMI, to district level, and even national level.</motion.p>
+            className='relative text-[11px] md:text-[16px] text-base text-slate-300 w-full md:w-[70%] leading-loose tracking-widest  before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>I have received awards in website development competitions, ranging from inter-student level at IKMI, to district level, and even national level.</motion.p>
 
           <div className="absolute left-[20%] w-[60%] h-[40px] py-[30%] transform -translate-y-[50%] -rotate-45 bg-[radial-gradient(circle_at_left_bottom,_#e6b7fe_10%,_#5049c2_20%,_rgba(87,78,255,0)_60%)] blur-[140px]"></div>
           <div className="absolute left-[15%] w-[100%] h-[40px] py-[30%] transform -translate-y-[72%] -rotate-45 bg-[radial-gradient(circle_at_left_bottom,_#e6b7fe_10%,_#5049c2_20%,_rgba(87,78,255,0)_0%)] blur-[25px]"></div>
@@ -1365,26 +1305,26 @@ const Homepage: React.FC = () => {
             className="w-full bg-white/20 backdrop-blur-2xl md:p-4 mt-12 md:rounded-[20px]">
 
             <div className='relative w-full bg-white md:rounded-tl-[16px] md:rounded-tr-[16px] md:grid grid-cols-2'>
-              <div className={`relative flex gap-6 items-center cursor-pointer px-4 md:px-6 py-16`}>
-                <img src={Winner} alt="git" className="w-12" />
-                <div className='flex-1'>
-                  <div className='w-max flex items-center gap-2' onClick={() => {
+              <div onClick={() => {
                     setIsModal(true)
                     setSelectImage(Jakarta)
-                  }}>
+                  }} className={`cursor-pointer hover:bg-slate-500/10 relative flex gap-6 items-center px-4 md:px-6 py-16`}>
+                <img src={Winner} alt="git" className="w-12" />
+                <div className='flex-1'>
+                  <div className='w-max flex items-center gap-2' >
                     <h3 className={`$text-black font-medium`}>2nd - national</h3>
                     <ViewIcon className='z-[9999] text-slate-600 active:scale-[0.98] cursor-pointer' />
                   </div>
                   <p className='text-[11px] md:text-[14px] mt-2 text-slate-500 leading-loose tracking-widest'>National-level Web Development Competition,</p>
                 </div>
               </div>
-              <div className={`relative flex gap-6 items-center cursor-pointer px-4 md:px-6 py-16 border-l border-slate-300`}>
-                <img src={Winner} alt="git" className="w-12" />
-                <div className='flex-1'>
-                  <div className='w-max flex items-center gap-2' onClick={() => {
+              <div onClick={() => {
                     setIsModal(true)
                     setSelectImage(Majalengka)
-                  }}>
+                  }} className={`cursor-pointer hover:bg-slate-500/10 relative flex gap-6 items-center  px-4 md:px-6 py-16 border-l border-slate-300`}>
+                <img src={Winner} alt="git" className="w-12" />
+                <div className='flex-1'>
+                  <div className='w-max flex items-center gap-2' >
                     <h3 className={`text-black font-medium`}>2nd - public</h3>
                     <ViewIcon className='z-[9999] text-slate-600 active:scale-[0.98] cursor-pointer' />
                   </div>
@@ -1394,13 +1334,13 @@ const Homepage: React.FC = () => {
             </div>
 
             <div className='relative w-full bg-white grid grid-cols-1'>
-              <div className={`flex gap-6 ${selectTypeGit === 'git3' ? 'bg-[#69dcff11]' : ''} items-center cursor-pointer px-4 md:px-6 py-16 border-t border-slate-300 w-full`}>
-                <img src={Winner} alt="git" className="w-12" />
-                <div className='flex-1'>
-                  <div className='w-max flex items-center gap-2' onClick={() => {
+              <div onClick={() => {
                     setIsModal(true)
                     setSelectImage(Inovasi)
-                  }}>
+                  }} className={`cursor-pointer hover:bg-slate-500/10 flex gap-6 ${selectTypeGit === 'git3' ? 'bg-[#69dcff11]' : ''} items-center px-4 md:px-6 py-16 border-t border-slate-300 w-full`}>
+                <img src={Winner} alt="git" className="w-12" />
+                <div className='flex-1'>
+                  <div className='w-max flex items-center gap-2' >
                     <h3 className={`${selectTypeGit === 'git1' ? 'text-[#f85c98]' : 'text-black'} font-medium`}>1st - district</h3>
                     <ViewIcon className='z-[9999] text-slate-600 active:scale-[0.98] cursor-pointer' />
                   </div>
@@ -1410,26 +1350,26 @@ const Homepage: React.FC = () => {
             </div>
 
             <div className='relative w-full bg-white md:rounded-bl-[16px] md:rounded-br-[16px] grid md:grid-cols-2 before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-slate-900/80 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-slate-900/80 dark:after:bg-white/10 after:-left-[100vw]'>
-              <div className={`relative flex gap-6 items-center cursor-pointer px-4 md:px-6 py-16 border-t border-slate-300 w-full`}>
-                <img src={Winner} alt="git" className="w-12" />
-                <div className='flex-1'>
-                  <div className='w-max flex items-center gap-2' onClick={() => {
+              <div onClick={() => {
                     setIsModal(true)
                     setSelectImage(Cirebon)
-                  }}>
+                  }} className={`cursor-pointer hover:bg-slate-500/10 relative flex gap-6 items-center cursor-pointer px-4 md:px-6 py-16 border-t border-slate-300 w-full`}>
+                <img src={Winner} alt="git" className="w-12" />
+                <div className='flex-1'>
+                  <div className='w-max flex items-center gap-2' >
                     <h3 className={`${selectTypeGit === 'git1' ? 'text-[#f85c98]' : 'text-black'} font-medium`}>1st - intramural</h3>
                     <ViewIcon className='z-[9999] text-slate-600 active:scale-[0.98] cursor-pointer' />
                   </div>
                   <p className='text-[11px] md:text-[14px] mt-2 text-slate-500 leading-loose tracking-widest'>Inter-College Landing Page Web Competition exclusively.</p>
                 </div>
               </div>
-              <div className={`relative flex gap-6 items-center cursor-pointer px-4 md:px-6 py-16 border-t border-x border-slate-300`}>
-                <img src={Winner} alt="git" className="w-12" />
-                <div className='flex-1'>
-                  <div className='w-max flex items-center gap-2' onClick={() => {
+              <div onClick={() => {
                     setIsModal(true)
                     setSelectImage(JWD)
-                  }}>
+                  }} className={`cursor-pointer hover:bg-slate-500/10 relative flex gap-6 items-center px-4 md:px-6 py-16 border-t border-x border-slate-300`}>
+                <img src={Winner} alt="git" className="w-12" />
+                <div className='flex-1'>
+                  <div className='w-max flex items-center gap-2' >
                     <h3 className={`text-black font-medium`}>BNSP - JWD</h3>
                     <ViewIcon className='z-[9999] text-slate-600 active:scale-[0.98] cursor-pointer' />
                   </div>

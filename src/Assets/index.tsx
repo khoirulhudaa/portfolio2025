@@ -14,6 +14,8 @@ import DockerBlueText from './docker-mark-blue.png'
 import Electshop1 from './electshop1.png'
 import Electshop2 from './electshop2.png'
 import FlowTrush from './flowtrush.svg'
+import Ex from './ex.png'
+import Ex2 from './ex2.png'
 import Footer from './footer.png'
 import Geospasial from './geospasial.svg'
 import Git1 from './git1.png'
@@ -96,6 +98,8 @@ export {
     Xendit,
     Google,
     Chater1,
+    Ex,
+    Ex2,
     Chater2,
     Socket,
     Turborepo,
